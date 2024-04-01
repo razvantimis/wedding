@@ -65,20 +65,20 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
         Va rog sa confirmati participare pana in data de 31.05.2024 ( final de
         Mai )
       </h3>
-      <div class="flex justify-around items-center">
-      <a href={whatsappUrl} target="_blank">
-        <button
-          class="w-64 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
-        >
-          Confirmare WhatsApp
-        </button>
-      </a>
-      <a href={smsUrl}>
-        <button
-          class="w-48 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
-        >
-        Confirmare SMS
-        </button>
+      <div class="flex items-center justify-around">
+        <a href={whatsappUrl} target="_blank">
+          <button
+            class="w-64 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
+          >
+            Confirmare WhatsApp
+          </button>
+        </a>
+        <a href={smsUrl}>
+          <button
+            class="w-48 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
+          >
+            Confirmare SMS
+          </button>
         </a>
       </div>
     </section>
