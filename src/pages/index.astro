@@ -1,11 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import bgBigg from "../assets/images/bg_DSC_3244.jpg";
+import myBackground from "../assets/images/bg_DSC_3244.jpg";
+
+import { getImage } from "astro:assets";
+const optimizedBackground = await getImage({src: myBackground });
 ---
 
 <Layout title="Andreea & Razvan ">
   <div
-    class="bg-invited min-h-screen bg-cover bg-bottom flex justify-center items-center"
+	style={`background-image: url(${optimizedBackground.src});`}
+    class="min-h-screen bg-cover bg-bottom flex justify-center items-center"
   >
     <div class="w-1/2 relative flex">
       <div class="bg-black absolute h-full w-full opacity-30 rounded-md shadow-md"></div>
@@ -23,7 +27,4 @@ import bgBigg from "../assets/images/bg_DSC_3244.jpg";
 </Layout>
 
 <style>
-  .bg-invited {
-    background-image: url(../assets/images/bg_DSC_3244.jpg);
-  }
 </style>
