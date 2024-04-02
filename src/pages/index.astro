@@ -16,7 +16,7 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
   <header
     data-bg="false"
     id="header"
-    class="fixed top-0 z-40 w-full bg-black bg-opacity-0 data-[bg=true]:bg-opacity-40 data-[bg=true]:shadow-md"
+    class="fixed top-0 z-40 w-screen bg-black bg-opacity-0 data-[bg=true]:bg-opacity-40 data-[bg=true]:shadow-md"
   >
     <div class="m-4 flex justify-end">
       <a class="mr-4" href="#confirmare">
@@ -65,17 +65,17 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
         Va rog sa confirmati participare pana in data de 31.05.2024 ( final de
         Mai )
       </h3>
-      <div class="flex items-center justify-around">
+      <div class="flex items-center justify-around flex-wrap gap-4">
         <a href={whatsappUrl} target="_blank">
           <button
-            class="w-64 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
+            class="rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
           >
             Confirmare WhatsApp
           </button>
         </a>
         <a href={smsUrl}>
           <button
-            class="w-48 rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
+            class="rounded-md bg-black bg-opacity-80 p-2 text-white hover:bg-opacity-100 md:text-xl"
           >
             Confirmare SMS
           </button>
