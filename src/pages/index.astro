@@ -18,7 +18,7 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
     id="header"
     class="fixed top-0 z-40 w-screen bg-black bg-opacity-0 data-[bg=true]:bg-opacity-40 data-[bg=true]:shadow-md"
   >
-    <div class="m-4 flex justify-end">
+    <div class="m-4 flex justify-center gap-4 md:justify-end">
       <a class="mr-4" href="#confirmare">
         <button
           class="w-32 rounded-md bg-black bg-opacity-60 p-2 text-white hover:bg-opacity-100"
@@ -35,7 +35,7 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
       </a>
     </div>
   </header>
-  <main class="mb-16 space-y-2">
+  <main class="mb-16 space-y-2 w-screen flex flex-col">
     <section
       id="intro"
       style={`background-image: url(${optimizedBackground.src});`}
@@ -60,8 +60,8 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
       </div>
     </section>
 
-    <section id="confirmare" class="m-10">
-      <h3 class="mb-6 mt-10 text-3xl">
+    <section id="confirmare" class="p-4">
+      <h3 class="mb-6 mt-10 text-3xl text-center">
         Va rog sa confirmati participare pana in data de 31.05.2024 ( final de
         Mai )
       </h3>
@@ -82,7 +82,7 @@ const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
         </a>
       </div>
     </section>
-    <section id="location">
+    <section id="location" class="p-4">
       <h3 class="mb-6 mt-10 text-center text-3xl">
         Locatia biserica - ora 19:00
       </h3>
