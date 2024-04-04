@@ -6,11 +6,10 @@ import { Icon } from "astro-icon/components";
 import { getImage } from "astro:assets";
 const optimizedBackground = await getImage({ src: myBackground });
 
-const myPhoneNumber = "0040746339070";
 const textMessage =
-  "Bună ziua, îmi face plăcere să particip la nunta voastră. Voi veni ...";
-const whatsappUrl = `https://wa.me/${myPhoneNumber}?text=${encodeURIComponent(textMessage)}`;
-const smsUrl = `sms:${myPhoneNumber}?&body=${textMessage}`;
+  "Bună ziua, voi participa la nunta voastră...";
+const whatsappUrl = `https://wa.me/+40746339070?text=${encodeURIComponent(textMessage)}`;
+const smsUrl = `sms:+40746339070?&body=${textMessage}`;
 ---
 
 <Layout title="Andreea & Razvan ">
