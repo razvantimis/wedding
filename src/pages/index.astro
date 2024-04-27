@@ -7,7 +7,7 @@ import { getImage } from "astro:assets";
 const optimizedBackground = await getImage({ src: myBackground });
 
 const textMessage =
-  "Bună ziua, voi participa la nunta voastră...";
+  "Bună ziua, voi participa la nunta voastră!";
 const whatsappUrl = `https://wa.me/+40746339070?text=${encodeURIComponent(textMessage)}`;
 const smsUrl = `sms:+40746339070?&body=${textMessage}`;
 ---
